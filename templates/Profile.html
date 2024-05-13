@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+
+{% if 'User' in session %}
+    <h1>Hola, {{ session['User'] }}, estás en tu perfil!😎</h1>
+{% else %}
+    <h1>Bienvenido al perfil!😎</h1>
+{% endif %}
+
+{% endblock %}
